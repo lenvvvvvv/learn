@@ -1,0 +1,22 @@
+pipeline:
+  name: demo-python-cicd
+  workspace: .
+  history_file: .mini_jenkins_history.jsonl
+
+  stages:
+    - name: install
+      steps:
+        - name: show-python
+          run: python3 --version
+
+    - name: test
+      steps:
+        - name: lint-like-check
+          run: python3 -m py_compile mini_jenkins.py
+
+    - name: package
+      when:
+        branch: main
+      steps:
+        - name: archive
+          run: tar -czf build.tar.gz mini_jenkins.py pipeline.example.yml
