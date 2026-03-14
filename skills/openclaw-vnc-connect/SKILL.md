@@ -73,3 +73,4 @@ When assisting users, respond in this order:
 ## Resources
 - Use `scripts/connect_vnc.sh` to print ready-to-run commands for direct/tunnel modes.
 - Use `references/troubleshooting.md` for auth/black-screen/timeout troubleshooting.
+- For Chinese operator instructions in OpenClaw, see `使用说明-openclaw.md`.
