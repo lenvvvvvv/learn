@@ -1,8 +1,0 @@
-容器推送步骤：
-阿里云密码：8681208lgz.
-1、登录仓库：docker login --username=aliyun5267011773 registry.cn-shenzhen.aliyuncs.com
-2、拉取镜像：docker pull unbuntu:laeast
-3、进入容器进行自定义操作
-4、修改标签名：$ docker tag [ImageId] registry.cn-shenzhen.aliyuncs.com/laiguozhang/nginx.10:[镜像版本号]
-5、推送镜像到阿里云$ docker push registry.cn-shenzhen.aliyuncs.com/laiguozhang/nginx.10:[镜像版本号]
-6、
